@@ -1,0 +1,28 @@
+.
+├── README.md
+├── package.json
+├── src
+│   ├── app.d.ts
+│   ├── app.html
+│   └── routes
+│       ├── +layout.svelte
+│       ├── +page.svelte
+│       ├── about
+│       │   └── +page.svelte
+│       ├── albums
+│       │   └── +page.svelte
+│       └── article
+│           ├── +page.svelte
+│           ├── bulletin.svelte
+│           ├── error.svelte
+│           ├── post-list.svelte
+│           └── tags.svelte
+├── static
+│   └── favicon.png
+├── svelte.config.js
+├── tree.text
+├── tsconfig.json
+├── vite.config.ts
+└── yarn.lock
+
+7 directories, 19 files
