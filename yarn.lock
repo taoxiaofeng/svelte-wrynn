@@ -112,6 +112,18 @@
   resolved "https://registry.npmmirror.com/@esbuild/win32-x64/-/win32-x64-0.17.19.tgz#8cfaf2ff603e9aabb910e9c0558c26cf32744061"
   integrity sha512-lAhycmKnVOuRYNtRtatQR1LPQf2oYCkRGkSFnseDAKPl8lu5SOsK/e1sXe5a0Pc5kHIHe6P2I/ilntNv2xf3cA==
 
+"@floating-ui/core@^1.2.6":
+  version "1.3.1"
+  resolved "https://registry.npmmirror.com/@floating-ui/core/-/core-1.3.1.tgz#4d795b649cc3b1cbb760d191c80dcb4353c9a366"
+  integrity sha512-Bu+AMaXNjrpjh41znzHqaz3r2Nr8hHuHZT6V2LBKMhyMl0FgKA62PNYbqnfgmzOhoWZj70Zecisbo4H1rotP5g==
+
+"@floating-ui/dom@1.2.8":
+  version "1.2.8"
+  resolved "https://registry.npmmirror.com/@floating-ui/dom/-/dom-1.2.8.tgz#aee0f6ccc0787ab8fe741487a6e5e95b7b125375"
+  integrity sha512-XLwhYV90MxiHDq6S0rzFZj00fnDM+A1R9jhSioZoMsa7G0Q0i+Q4x40ajR8FHSdYDE1bgjG45mIWe6jtv9UPmg==
+  dependencies:
+    "@floating-ui/core" "^1.2.6"
+
 "@jridgewell/resolve-uri@3.1.0":
   version "3.1.0"
   resolved "https://registry.npmmirror.com/@jridgewell/resolve-uri/-/resolve-uri-3.1.0.tgz#2203b118c157721addfe69d47b70465463066d78"
@@ -156,15 +168,15 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@polka/url@^1.0.0-next.20":
+"@polka/url@^1.0.0-next.20", "@polka/url@^1.0.0-next.21":
   version "1.0.0-next.21"
   resolved "https://registry.npmmirror.com/@polka/url/-/url-1.0.0-next.21.tgz#5de5a2385a35309427f6011992b544514d559aa1"
   integrity sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==
 
-"@rollup/plugin-commonjs@^24.0.0":
-  version "24.1.0"
-  resolved "https://registry.npmmirror.com/@rollup/plugin-commonjs/-/plugin-commonjs-24.1.0.tgz#79e54bd83bb64396761431eee6c44152ef322100"
-  integrity sha512-eSL45hjhCWI0jCCXcNtLVqM5N1JlBGvlFfY0m6oOYnLCJ6N0qEXoZql4sY2MOUArzhH4SA/qBpTxvvZp2Sc+DQ==
+"@rollup/plugin-commonjs@^25.0.0":
+  version "25.0.2"
+  resolved "https://registry.npmmirror.com/@rollup/plugin-commonjs/-/plugin-commonjs-25.0.2.tgz#7ed37d00a12fc7fdd3aadba5fa0de52f2372bbbb"
+  integrity sha512-NGTwaJxIO0klMs+WSFFtBP7b9TdTJ3K76HZkewT8/+yHzMiUGVQgaPtLQxNVYIgT5F7lxkEyVID+yS3K7bhCow==
   dependencies:
     "@rollup/pluginutils" "^5.0.1"
     commondir "^1.0.1"
@@ -192,7 +204,7 @@
     is-module "^1.0.0"
     resolve "^1.22.1"
 
-"@rollup/pluginutils@^5.0.1":
+"@rollup/pluginutils@^5.0.1", "@rollup/pluginutils@^5.0.2":
   version "5.0.2"
   resolved "https://registry.npmmirror.com/@rollup/pluginutils/-/pluginutils-5.0.2.tgz#012b8f53c71e4f6f9cb317e311df1404f56e7a33"
   integrity sha512-pTd9rIsP92h+B6wWwFbW8RkZv4hiR/xKsqre4SIuAOaOEQRxi0lqLke9k2/7WegC85GgUs9pjmOjCUi3In4vwA==
@@ -201,15 +213,24 @@
     estree-walker "^2.0.2"
     picomatch "^2.3.1"
 
+"@stitches/core@1.2.8":
+  version "1.2.8"
+  resolved "https://registry.npmmirror.com/@stitches/core/-/core-1.2.8.tgz#dce3b8fdc764fbc6dbea30c83b73bfb52cf96173"
+  integrity sha512-Gfkvwk9o9kE9r9XNBmJRfV8zONvXThnm1tcuojL04Uy5uRyqg93DC83lDebl0rocZCfKSjUv+fWYtMQmEDJldg==
+
 "@sveltejs/adapter-node@^2.0.0":
-  version "1.2.4"
-  resolved "https://registry.npmmirror.com/@sveltejs/adapter-node/-/adapter-node-1.2.4.tgz#562e658adc805eb8ded43e26ca6f013cd28904e7"
-  integrity sha512-TNnhS+OKRZ9RKnC+ho5mlE2FJquI61i0v7yOXxBUSU3LAoYH2kwVVL8P8ecjefmZ8BOfM1V54pBnDODBU5CEaA==
+  version "1.3.0"
+  resolved "https://registry.npmmirror.com/@sveltejs/adapter-node/-/adapter-node-1.3.0.tgz#a9d487028d5961f73699eca6b9dd3dd1dce4abae"
+  integrity sha512-eLCC9/eAC9glcTd7TQ4eq5DFOx849H076ZDnBZuPqPsMNRFQ0ewzPBykRSzuDau+X0DvnKkt/67sZ0JTAhwBWA==
   dependencies:
-    "@rollup/plugin-commonjs" "^24.0.0"
+    "@polka/url" "^1.0.0-next.21"
+    "@rollup/plugin-commonjs" "^25.0.0"
     "@rollup/plugin-json" "^6.0.0"
     "@rollup/plugin-node-resolve" "^15.0.1"
+    "@rollup/pluginutils" "^5.0.2"
+    polka "^1.0.0-next.22"
     rollup "^3.7.0"
+    sirv "^2.0.2"
 
 "@sveltejs/kit@^1.5.0":
   version "1.20.0"
@@ -249,6 +270,19 @@
     magic-string "^0.30.0"
     svelte-hmr "^0.15.1"
     vitefu "^0.2.4"
+
+"@svelteuidev/composables@^0.13.0":
+  version "0.13.0"
+  resolved "https://registry.npmmirror.com/@svelteuidev/composables/-/composables-0.13.0.tgz#1b64670374069574b3b706947ae647d13cceee88"
+  integrity sha512-vnDcmSMwav11Xp4f9PUJW5wlHbj1rQTIU9v62C0eOjfq4r/CLyj8FTRslKX5nrBUQxxlYlamsdM5rqCUm4aEbw==
+
+"@svelteuidev/core@^0.13.0":
+  version "0.13.0"
+  resolved "https://registry.npmmirror.com/@svelteuidev/core/-/core-0.13.0.tgz#0402969d06b09da5b8b580256ed831410092e6f0"
+  integrity sha512-Jtl8J8leUkEHTpLQsJ5Rgeb0CqTAcn4ol656bqLjy/ZMLCpaRP867E5W31htLn7BxOVLpUe9QKpiuoTz7nHLcQ==
+  dependencies:
+    "@floating-ui/dom" "1.2.8"
+    "@stitches/core" "1.2.8"
 
 "@types/cookie@^0.5.1":
   version "0.5.1"
@@ -722,6 +756,14 @@ picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.3.1:
   resolved "https://registry.npmmirror.com/picomatch/-/picomatch-2.3.1.tgz#3ba3833733646d9d3e4995946c1365a67fb07a42"
   integrity sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==
 
+polka@^1.0.0-next.22:
+  version "1.0.0-next.22"
+  resolved "https://registry.npmmirror.com/polka/-/polka-1.0.0-next.22.tgz#3c25659a401608cf437732f292baf481dc6ec16e"
+  integrity sha512-a7tsZy5gFbJr0aUltZS97xCkbPglXuD67AMvTyZX7BTDBH384FWf0ZQF6rPvdutSxnO1vUlXM2zSLf5tCKk5RA==
+  dependencies:
+    "@polka/url" "^1.0.0-next.21"
+    trouter "^3.1.0"
+
 postcss@^8.4.23:
   version "8.4.24"
   resolved "https://registry.npmmirror.com/postcss/-/postcss-8.4.24.tgz#f714dba9b2284be3cc07dbd2fc57ee4dc972d2df"
@@ -742,6 +784,11 @@ readdirp@~3.6.0:
   integrity sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==
   dependencies:
     picomatch "^2.2.1"
+
+regexparam@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.npmmirror.com/regexparam/-/regexparam-1.3.0.tgz#2fe42c93e32a40eff6235d635e0ffa344b92965f"
+  integrity sha512-6IQpFBv6e5vz1QAqI+V4k8P2e/3gRrqfCJ9FI+O1FLQTO+Uz6RXZEZOPmTJ6hlGj7gkERzY5BRCv09whKP96/g==
 
 resolve-from@^4.0.0:
   version "4.0.0"
@@ -900,6 +947,13 @@ totalist@^3.0.0:
   version "3.0.1"
   resolved "https://registry.npmmirror.com/totalist/-/totalist-3.0.1.tgz#ba3a3d600c915b1a97872348f79c127475f6acf8"
   integrity sha512-sf4i37nQ2LBx4m3wB74y+ubopq6W/dIzXg0FDGjsYnZHVa1Da8FH853wlL2gtUhg+xJXjfk3kUZS3BRoQeoQBQ==
+
+trouter@^3.1.0:
+  version "3.2.1"
+  resolved "https://registry.npmmirror.com/trouter/-/trouter-3.2.1.tgz#a07e6f39a48fa0950a0157897075b633265b0fd9"
+  integrity sha512-oY3CmIiEYOe1YMEzh++I67lrNOUldtCeuLL0vRPydvQLHZpSJ03B5dgDFlpFsiriMq6e//NDjjopjUzXOztHow==
+  dependencies:
+    regexparam "^1.3.0"
 
 tslib@^2.4.1:
   version "2.5.2"
