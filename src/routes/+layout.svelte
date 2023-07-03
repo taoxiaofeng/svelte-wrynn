@@ -4,12 +4,15 @@
   import { SvelteUIProvider } from "@svelteuidev/core";
   import Header from "./Header.svelte";
   import "./styles.css";
-  // import CreateStyles from "../components/CreateStyles.svelte";
-  import CreateStyles2 from "../components/CreateStyles2.svelte";
-  import CreateStyles3 from "../components/CreateStyles3.svelte";
+  import { globalStyles } from "../styles";
+	import Animation from "../components/Animation.svelte";
 
   let element: any;
   // console.log({ element });
+
+  globalStyles();
+
+	console.log(`globalStyles() -- `, globalStyles())
 </script>
 
 <!-- SvelteUIProvider 包括一个 NormalizeCSS 样式表和一些添加到 body 元素的额外全局样式：
@@ -31,7 +34,7 @@ font-family并font-size根据主题
     <Header />
     <main>
       <slot />
-			<CreateStyles3 />
+			<Animation />
     </main>
 
     <footer>
