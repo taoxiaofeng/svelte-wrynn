@@ -86,6 +86,7 @@ svelte-wrynn
 ├─ README.md  // 项目说明
 ├─ package.json // 项目依赖
 ├─ src  // 项目源码
+│  ├─ components // 用于存储SvelteKit的应用程序组件
 │  ├─ app.d.ts // 用于存储SvelteKit的TypeScript类型
 │  ├─ app.html // 用于存储SvelteKit的应用程序HTML模板
 │  ├─ lib // 用于存储SvelteKit的应用程序库
@@ -121,4 +122,9 @@ svelte-wrynn
 ├─ vite.config.ts   // 用于存储SvelteKit的Vite配置
 └─ yarn.lock        // 用于存储SvelteKit的Yarn依赖
 
+```
+
+## 使用的UI框架地址
+```bash
+https://svelteui.dev/
 ```
