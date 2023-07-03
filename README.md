@@ -83,20 +83,20 @@ svelte-wrynn
 │              ├─ $types.d.ts
 │              └─ how-to-play
 │                 └─ $types.d.ts
-├─ README.md
-├─ package.json
-├─ src
-│  ├─ app.d.ts
-│  ├─ app.html
-│  ├─ lib
-│  │  └─ images
+├─ README.md  // 项目说明
+├─ package.json // 项目依赖
+├─ src  // 项目源码
+│  ├─ app.d.ts // 用于存储SvelteKit的TypeScript类型
+│  ├─ app.html // 用于存储SvelteKit的应用程序HTML模板
+│  ├─ lib // 用于存储SvelteKit的应用程序库
+│  │  └─ images // 用于存储SvelteKit的应用程序图像
 │  │     ├─ github.svg
 │  │     ├─ svelte-logo.svg
 │  │     ├─ svelte-welcome.png
 │  │     └─ svelte-welcome.webp
-│  └─ routes
-│     ├─ +layout.svelte
-│     ├─ +page.svelte
+│  └─ routes // 用于存储SvelteKit的应用程序路由
+│     ├─ +layout.svelte // 用于存储SvelteKit的应用程序布局
+│     ├─ +page.svelte // 用于存储SvelteKit的应用程序页面
 │     ├─ +page.ts
 │     ├─ Counter.svelte
 │     ├─ Header.svelte
@@ -111,14 +111,14 @@ svelte-wrynn
 │        ├─ how-to-play
 │        │  ├─ +page.svelte
 │        │  └─ +page.ts
-│        ├─ reduced-motion.ts
-│        └─ words.server.ts
-├─ static
+│        ├─ reduced-motion.ts // 用于存储SvelteKit的应用程序减少动作
+│        └─ words.server.ts   // 用于存储SvelteKit的应用程序服务器端路由
+├─ static // 用于存储SvelteKit的静态文件
 │  ├─ favicon.png
 │  └─ robots.txt
-├─ svelte.config.js
-├─ tsconfig.json
-├─ vite.config.ts
-└─ yarn.lock
+├─ svelte.config.js // 用于存储SvelteKit的配置
+├─ tsconfig.json    // 用于存储SvelteKit的TypeScript配置
+├─ vite.config.ts   // 用于存储SvelteKit的Vite配置
+└─ yarn.lock        // 用于存储SvelteKit的Yarn依赖
 
 ```
