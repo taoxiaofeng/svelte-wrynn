@@ -1,18 +1,19 @@
 <script lang="ts">
   // 为了使 SvelteUI 正常工作，您需要在应用程序的顶层设置 SvelteUIProvider
-  import { pageleave } from "@svelteuidev/composables";
-  import { SvelteUIProvider } from "@svelteuidev/core";
+  import {
+    SvelteUIProvider,
+    colorScheme,
+    Stack,
+    Switch,
+    Text,
+  } from "@svelteuidev/core";
   import Header from "./Header.svelte";
   import "./styles.css";
-  import { globalStyles } from "../styles";
-	import Animation from "../components/Animation.svelte";
+  import Animation from "../components/Animation.svelte";
 
-  let element: any;
-  // console.log({ element });
-
-  globalStyles();
-
-	console.log(`globalStyles() -- `, globalStyles())
+  function toggleTheme() {
+    colorScheme.update((v) => (v === "dark" ? "light" : "dark"));
+  }
 </script>
 
 <!-- SvelteUIProvider 包括一个 NormalizeCSS 样式表和一些添加到 body 元素的额外全局样式：
@@ -25,16 +26,17 @@ font-family并font-size根据主题
 <SvelteUIProvider
   withNormalizeCSS
   withGlobalStyles
-  bind:element
-  use={[[pageleave, () => console.log("page left")]]}
-  class="animate-bounce"
-  override={{ mt: "$4" }}
+  themeObserver={$colorScheme}
 >
   <div class="app">
     <Header />
     <main>
       <slot />
-			<Animation />
+      <Stack align="center">
+        <Text>Press to change the theme</Text>
+        <Switch on:change={toggleTheme} />
+      </Stack>
+      <Animation />
     </main>
 
     <footer>
