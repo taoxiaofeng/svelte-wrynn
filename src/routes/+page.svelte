@@ -9,7 +9,7 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section>
+<!-- <section>
 	<h1>
 		<span class="welcome">
 			<picture>
@@ -26,7 +26,7 @@
 	</h2>
 
 	<Counter />
-</section>
+</section> -->
 
 <style>
 	section {
